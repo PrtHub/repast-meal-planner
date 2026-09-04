@@ -7,6 +7,7 @@ import RefusalSection from "./components/sections/RefusalSection";
 import ShoppingSection from "./components/sections/ShoppingSection";
 import PrivacySection from "./components/sections/PrivacySection";
 import PricingSection from "./components/sections/PricingSection";
+import FaqSection from "./components/sections/FaqSection";
 import BottomCtaSection from "./components/sections/BottomCtaSection";
 import Footer from "./components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <ShoppingSection />
         <PrivacySection />
         <PricingSection />
+        <FaqSection />
         <BottomCtaSection />
       </main>
       <Footer />

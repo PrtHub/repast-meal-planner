@@ -17,11 +17,16 @@ export default function RefusalSection() {
               food you said no to.
             </p>
             <p>
-              If your rules — say, under 15 minutes, pescatarian, and no eggs — leave fewer valid
-              recipes than the week demands, Repast stops and tells you. It names the exact
-              bottleneck and calculates how much loosening it unlocks.
+              19% of initial simulated profiles cannot be served without adjustment — almost all of
+              them combining under-15-minute prep with a strict dietary rule. Repast stops and tells you
+              up front.
             </p>
-            <p className="text-[#221d19] font-medium">
+            <p>
+              It diagnoses the exact bottleneck across <strong className="text-[#221d19]">five relaxation categories</strong>:
+              drop an allergen exclusion, allow longer cooking, add equipment, allow harder recipes,
+              or un-dislike an ingredient.
+            </p>
+            <p className="text-[#221d19] font-medium pt-1">
               No secret substitutions. No breaking your rules behind your back.
             </p>
           </div>
