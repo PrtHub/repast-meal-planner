@@ -29,6 +29,30 @@ const tools = [
     linkText: "Calculate your ceiling →",
   },
   {
+    slug: "electrolyte-calculator",
+    title: "Keto Electrolyte & Mineral Solver",
+    description:
+      "Calculate exact elemental milligrams of Sodium, Potassium, and Magnesium adjusted for your net carb ceiling and sweat rate, with kitchen translations to salt and whole foods.",
+    badge: "Renal Mineral Model",
+    linkText: "Solve your electrolytes →",
+  },
+  {
+    slug: "net-carb-converter",
+    title: "True Net Carb & Sugar Alcohol Converter",
+    description:
+      "Unmask deceptive keto food packaging. Compare claimed net carbs against true metabolic impact, polyol glycemic absorption, and osmotic distress risk.",
+    badge: "Label Deception Audit",
+    linkText: "Convert true net carbs →",
+  },
+  {
+    slug: "fasting-window-solver",
+    title: "Intermittent Fasting & Macro Window Solver",
+    description:
+      "Calculate your 40/60 asymmetric meal distribution and circadian timeline for 16:8, 18:6, or OMAD to hit your protein floor without afternoon brain fog.",
+    badge: "Chrono-Nutrition",
+    linkText: "Solve fasting window →",
+  },
+  {
     slug: "feasibility-checker",
     title: "Constraint Feasibility Checker",
     description:
@@ -40,7 +64,7 @@ const tools = [
     slug: "leftover-calculator",
     title: "Leftover & Cook Session Savings Calculator",
     description:
-      "See how counting whole cooks instead of individual sittings cuts benchmark grocery basket weight and eliminates refrigerator food waste.",
+      "See how counting whole cooks instead of individual sittings cuts benchmark grocery basket weight in half and eliminates refrigerator food waste.",
     badge: "Savings Model",
     linkText: "Estimate grocery savings →",
   },

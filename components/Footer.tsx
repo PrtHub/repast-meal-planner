@@ -69,18 +69,28 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/tools/electrolyte-calculator" className="hover:text-[#221d19] transition-colors">
+                  Electrolyte & Mineral Solver
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/net-carb-converter" className="hover:text-[#221d19] transition-colors">
+                  True Net Carb Converter
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/fasting-window-solver" className="hover:text-[#221d19] transition-colors">
+                  Fasting & Macro Solver
+                </Link>
+              </li>
+              <li>
                 <Link href="/tools/feasibility-checker" className="hover:text-[#221d19] transition-colors">
                   Feasibility Diagnostic
                 </Link>
               </li>
               <li>
-                <Link href="/tools/leftover-calculator" className="hover:text-[#221d19] transition-colors">
-                  Leftover Savings Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools" className="hover:text-[#221d19] transition-colors">
-                  All Planning Tools →
+                <Link href="/tools" className="text-[#c05621] font-semibold hover:underline">
+                  All 6 Free Tools →
                 </Link>
               </li>
             </ul>
