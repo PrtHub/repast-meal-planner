@@ -1,26 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,opsz@0,8..144;1,8..144&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm paper. Never #fff — food dies on white. */
+  --bg: #f7f4ee;
+  --bg-element: #ffffff;
+  --bg-selected: #fdf6f1;
+  --bg-sunken: #f0ebe2;
+
+  --text: #221d19;
+  --text-secondary: #6e655c;
+  --text-tertiary: #a39a90;
+  --text-quaternary: #c5bcb0;
+
+  --hairline: #e6dfd5;
+  --hairline-soft: #ede6dc;
+
+  /* Terracotta. Selection and primary action. */
+  --accent: #c05621;
+  --accent-pressed: #98421a;
+  --accent-on: #fff8ee;
+  --accent-wash: #f0e4d8;
+
+  /* Immersive ground — dark sections land as events, not more page. */
+  --deep: #221d19;
+  --deep-on: #fff8ee;
+
+  /* Macro colours. Carbs are a CAP: unremarkable until they matter. */
+  --protein: #2e6e7e;
+  --fat: #c99a2e;
+  --carb-calm: #6e655c;
+  --carb-warn: #c2402f;
+  --carb-over: #8f2a1e;
+
+  --radius-thumb: 15px;
+  --radius-card: 20px;
+  --radius-hero: 24px;
+  --radius-pill: 999px;
+
+  /* Elevation, not outlines. */
+  --shadow-card: 0 8px 18px rgba(34, 29, 25, 0.07);
+  --shadow-hero: 0 16px 30px rgba(34, 29, 25, 0.16);
+  --shadow-action: 0 10px 22px rgba(192, 86, 33, 0.4);
+
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Light mode only — do not invert or add dark mode override */
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Typography styles matching the type ramp */
+.font-serif-display {
+  font-family: var(--font-serif);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Specific button styles for WCAG 4.5:1 contrast requirement */
+.btn-primary {
+  background-color: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-action);
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-pressed);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Salmon / Dish radial gradient system (§7) */
+.dish-gradient-salmon {
+  background:
+    radial-gradient(72% 62% at 30% 24%, #f29e74 0%, transparent 100%),
+    radial-gradient(60% 54% at 70% 36%, #7c9455 0%, transparent 100%),
+    radial-gradient(92% 80% at 50% 98%, #33261a 0%, transparent 100%),
+    #9c5836;
+}
+
+.dish-gradient-chicken {
+  background:
+    radial-gradient(72% 62% at 30% 24%, #e3b769 0%, transparent 100%),
+    radial-gradient(60% 54% at 70% 36%, #7c9455 0%, transparent 100%),
+    radial-gradient(92% 80% at 50% 98%, #33261a 0%, transparent 100%),
+    #8a6437;
+}
+
+.dish-gradient-beef {
+  background:
+    radial-gradient(72% 62% at 30% 24%, #c2614b 0%, transparent 100%),
+    radial-gradient(60% 54% at 70% 36%, #52633d 0%, transparent 100%),
+    radial-gradient(92% 80% at 50% 98%, #201712 0%, transparent 100%),
+    #5a2b22;
+}
+
+.dish-gradient-egg {
+  background:
+    radial-gradient(72% 62% at 30% 24%, #f5cf6d 0%, transparent 100%),
+    radial-gradient(60% 54% at 70% 36%, #688a4e 0%, transparent 100%),
+    radial-gradient(92% 80% at 50% 98%, #2d261e 0%, transparent 100%),
+    #7a6331;
 }
