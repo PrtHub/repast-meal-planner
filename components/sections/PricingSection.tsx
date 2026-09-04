@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AppleIcon from "../AppleIcon";
 
 export default function PricingSection() {
   const appStoreUrl = "https://apps.apple.com/app/id6470000000";
@@ -44,9 +45,10 @@ export default function PricingSection() {
           <div className="pt-4 border-t border-[#ede6dc]">
             <a
               href={appStoreUrl}
-              className="w-full py-3 px-4 rounded-[12px] btn-primary block text-center text-[15px]"
+              className="w-full py-3 px-4 rounded-[12px] btn-primary flex items-center justify-center gap-2 text-center text-[15px]"
             >
-              Start 3-day free trial
+              <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+              <span>Start 3-day free trial</span>
             </a>
           </div>
         </div>
@@ -73,9 +75,10 @@ export default function PricingSection() {
           <div className="pt-4 border-t border-[#ede6dc]">
             <a
               href={appStoreUrl}
-              className="w-full py-3 px-4 rounded-[12px] bg-[#f0ebe2] hover:bg-[#e6dfd5] text-[#221d19] font-bold block text-center text-[15px] transition-colors"
+              className="w-full py-3 px-4 rounded-[12px] bg-[#f0ebe2] hover:bg-[#e6dfd5] text-[#221d19] font-bold flex items-center justify-center gap-2 text-center text-[15px] transition-colors"
             >
-              Get monthly plan
+              <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+              <span>Get monthly plan</span>
             </a>
           </div>
         </div>

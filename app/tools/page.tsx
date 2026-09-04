@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 
 export const metadata: Metadata = {
   title: "Interactive Planning Tools",
@@ -106,9 +107,10 @@ export default function ToolsIndexPage() {
           </p>
           <a
             href="https://apps.apple.com/app/id6470000000"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full btn-primary text-[14px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full btn-primary text-[14px]"
           >
-            Get Repast for iPhone
+            <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+            <span>Get Repast for iPhone</span>
           </a>
         </div>
       </main>

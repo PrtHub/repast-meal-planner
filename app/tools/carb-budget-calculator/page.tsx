@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 
 type DietType = "keto" | "low_carb" | "high_protein" | "paleo" | "mediterranean";
 type ActivityType = "sitting" | "light" | "active" | "very_active";
@@ -304,9 +305,10 @@ export default function CarbBudgetCalculatorPage() {
               </p>
               <a
                 href="https://apps.apple.com/app/id6470000000"
-                className="w-full py-3 rounded-[12px] btn-primary block text-center text-[14px]"
+                className="w-full py-3 rounded-[12px] btn-primary flex items-center justify-center gap-2 text-center text-[14px]"
               >
-                Build your plan on iPhone
+                <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+                <span>Build your plan on iPhone</span>
               </a>
             </div>
           </div>

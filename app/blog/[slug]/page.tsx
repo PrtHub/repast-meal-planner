@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 import { articles, getArticleBySlug } from "@/lib/articles";
 
 interface ArticlePageProps {
@@ -165,9 +166,10 @@ export default async function SingleArticlePage({ params }: ArticlePageProps) {
               href={article.cta?.buttonLink ?? "https://apps.apple.com/app/id6470000000"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"
             >
-              {article.cta?.buttonText ?? "Download Repast for iPhone"}
+              <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+              <span>{article.cta?.buttonText ?? "Download Repast for iPhone"}</span>
             </a>
           </div>
         </div>

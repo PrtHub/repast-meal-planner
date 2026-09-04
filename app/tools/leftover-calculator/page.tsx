@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 
 export default function LeftoverCalculatorPage() {
   const [householdSize, setHouseholdSize] = useState<number>(4);
@@ -148,9 +149,10 @@ export default function LeftoverCalculatorPage() {
               </p>
               <a
                 href="https://apps.apple.com/app/id6470000000"
-                className="w-full py-3 rounded-[12px] btn-primary block text-center text-[14px]"
+                className="w-full py-3 rounded-[12px] btn-primary flex items-center justify-center gap-2 text-center text-[14px]"
               >
-                Get Repast for iPhone
+                <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+                <span>Get Repast for iPhone</span>
               </a>
             </div>
           </div>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 
 export default function FeasibilityCheckerPage() {
   const [cookTime, setCookTime] = useState<number>(15);
@@ -226,9 +227,10 @@ export default function FeasibilityCheckerPage() {
               </p>
               <a
                 href="https://apps.apple.com/app/id6470000000"
-                className="w-full py-3 rounded-[12px] btn-primary block text-center text-[14px]"
+                className="w-full py-3 rounded-[12px] btn-primary flex items-center justify-center gap-2 text-center text-[14px]"
               >
-                Download Repast on the App Store
+                <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+                <span>Download Repast on the App Store</span>
               </a>
             </div>
           </div>

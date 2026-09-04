@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppleIcon from "@/components/AppleIcon";
 import { guides } from "@/lib/guides";
 
 export const metadata: Metadata = {
   title: "Keto & Low-Carb Planning Guides",
   description:
-    "Definitive reference guides on net carbs vs total carbs, the hard carb ceiling, EWMA weight trend smoothing, and leftover grocery science.",
+    "Definitive reference guides on net carbs vs total carbs, protein floors, renal electrolyte targets, grocery logistics, allergen constraints, and culinary science.",
   alternates: {
     canonical: "/guides",
   },
   openGraph: {
     title: "Keto & Low-Carb Planning Guides — Repast",
     description:
-      "Definitive reference guides on net carbs vs total carbs, the hard carb ceiling, and grocery consolidation.",
+      "Definitive reference guides on macro mathematics, electrolyte targets, grocery logistics, and constraint-based planning.",
     url: "https://repast.app/guides",
   },
 };
@@ -33,8 +34,8 @@ export default function GuidesIndexPage() {
             Keto & Low-Carb Planning Guides
           </h1>
           <p className="text-[16px] sm:text-[17px] leading-[26px] text-[#6e655c]">
-            Deep-dive reference articles explaining the mathematics of carbohydrate ceilings,
-            glycogen water noise, and cook-session grocery consolidation.
+            Definitive technical reference manuals covering macro mathematics, renal electrolyte targets,
+            7-aisle grocery logistics, allergen exclusions, and weeknight kitchen workflow engineering.
           </p>
         </div>
 
@@ -83,9 +84,10 @@ export default function GuidesIndexPage() {
           </p>
           <a
             href="https://apps.apple.com/app/id6470000000"
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full btn-primary text-[13px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full btn-primary text-[13px]"
           >
-            Get Repast for iPhone
+            <AppleIcon className="w-4 h-4 fill-current shrink-0" />
+            <span>Get Repast for iPhone</span>
           </a>
         </div>
       </main>
