@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#e6dfd5] py-14 px-6 bg-[#f7f4ee]">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Col 1: Brand */}
-          <div className="md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <span className="text-[22px] font-serif-display text-[#221d19] block mb-2">
               Repast
             </span>
@@ -23,7 +23,41 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Col 2: Interactive Tools */}
+          {/* Col 2: Who It's For */}
+          <div>
+            <span className="text-[10px] font-bold uppercase tracking-[1.4px] text-[#221d19] block mb-3">
+              Who It&apos;s For
+            </span>
+            <ul className="space-y-2 text-[13px] text-[#6e655c]">
+              <li>
+                <Link href="/for/busy-professionals" className="hover:text-[#221d19] transition-colors">
+                  Busy Professionals
+                </Link>
+              </li>
+              <li>
+                <Link href="/for/glp1-patients" className="hover:text-[#221d19] transition-colors">
+                  GLP-1 Muscle Support
+                </Link>
+              </li>
+              <li>
+                <Link href="/for/type-2-diabetes-prediabetes" className="hover:text-[#221d19] transition-colors">
+                  Blood Sugar Control
+                </Link>
+              </li>
+              <li>
+                <Link href="/for/couples-mixed-diet-households" className="hover:text-[#221d19] transition-colors">
+                  Mixed-Diet Couples
+                </Link>
+              </li>
+              <li>
+                <Link href="/for" className="text-[#c05621] font-semibold hover:underline">
+                  All 14 Use Cases →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 3: Interactive Tools */}
           <div>
             <span className="text-[10px] font-bold uppercase tracking-[1.4px] text-[#221d19] block mb-3">
               Interactive Tools

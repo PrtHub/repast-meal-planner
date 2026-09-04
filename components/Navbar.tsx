@@ -20,6 +20,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { href: "/for", label: "Who It's For" },
     { href: "/tools", label: "Tools", badge: "3" },
     { href: "/guides", label: "Guides" },
     { href: "/blog", label: "Blog" },

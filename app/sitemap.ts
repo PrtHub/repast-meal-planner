@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { guides } from "@/lib/guides";
 import { articles } from "@/lib/articles";
+import { useCases } from "@/lib/useCases";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://repast.app";
@@ -61,6 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${baseUrl}/for`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 
   const guideRoutes: MetadataRoute.Sitemap = guides.map((guide) => ({
@@ -77,5 +84,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...coreRoutes, ...guideRoutes, ...articleRoutes];
+  const useCaseRoutes: MetadataRoute.Sitemap = useCases.map((uc) => ({
+    url: `${baseUrl}/for/${uc.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
+  return [...coreRoutes, ...guideRoutes, ...articleRoutes, ...useCaseRoutes];
 }
