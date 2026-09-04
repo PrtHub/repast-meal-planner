@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
+import { guides } from "@/lib/guides";
+import { articles } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://repast.app";
   const now = new Date();
 
-  return [
+  const coreRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: now,
@@ -17,5 +19,63 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/carb-budget-calculator`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/feasibility-checker`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/leftover-calculator`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/guides`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
+
+  const guideRoutes: MetadataRoute.Sitemap = guides.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...coreRoutes, ...guideRoutes, ...articleRoutes];
 }

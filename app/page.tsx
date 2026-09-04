@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/sections/HeroSection";
-import ProofSection from "./components/sections/ProofSection";
-import HowItWorksSection from "./components/sections/HowItWorksSection";
-import FeatureGridSection from "./components/sections/FeatureGridSection";
-import RefusalSection from "./components/sections/RefusalSection";
-import ShoppingSection from "./components/sections/ShoppingSection";
-import PrivacySection from "./components/sections/PrivacySection";
-import PricingSection from "./components/sections/PricingSection";
-import FaqSection from "./components/sections/FaqSection";
-import BottomCtaSection from "./components/sections/BottomCtaSection";
-import Footer from "./components/Footer";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import ProofSection from "@/components/sections/ProofSection";
+import HowItWorksSection from "@/components/sections/HowItWorksSection";
+import FeatureGridSection from "@/components/sections/FeatureGridSection";
+import RefusalSection from "@/components/sections/RefusalSection";
+import ShoppingSection from "@/components/sections/ShoppingSection";
+import PrivacySection from "@/components/sections/PrivacySection";
+import PricingSection from "@/components/sections/PricingSection";
+import FaqSection from "@/components/sections/FaqSection";
+import BottomCtaSection from "@/components/sections/BottomCtaSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
