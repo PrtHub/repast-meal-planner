@@ -71,11 +71,55 @@ const tools = [
 ];
 
 export default function ToolsIndexPage() {
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Interactive Planning Tools — Repast",
+    description:
+      "Free interactive planning utilities from Repast: Calculate your net carb ceiling, test diet constraint feasibility, and estimate cook-session grocery savings.",
+    url: "https://repast.app/tools",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: tools.length,
+      itemListElement: tools.map((tool, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `https://repast.app/tools/${tool.slug}`,
+        name: tool.title,
+      })),
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f4ee] text-[#221d19]">
       <Navbar />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <main className="max-w-5xl mx-auto px-6 py-16 sm:py-20">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[12px] text-[#6e655c] mb-6">
+          <Link href="/" className="hover:text-[#221d19]">Home</Link>
+          <span>/</span>
+          <span className="text-[#221d19] font-medium">Tools</span>
+        </nav>
+
         <div className="max-w-2xl mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f0e4d8] text-[#98421a] text-[11px] font-bold uppercase tracking-[1.4px] mb-4">
             <span>PLANNING UTILITIES</span>

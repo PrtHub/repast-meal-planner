@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   }
 
   return {
-    title: `${article.title} — Repast Blog`,
+    title: article.title,
     description: article.excerpt,
     alternates: {
       canonical: `/blog/${article.slug}`,
@@ -56,13 +56,16 @@ export default async function SingleArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const isoDate = new Date(article.publishedDate).toISOString().split("T")[0];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.excerpt,
     "articleSection": article.category,
-    "datePublished": "2026-08-25",
+    "datePublished": isoDate,
+    "dateModified": isoDate,
     "author": {
       "@type": "Organization",
       "name": "Repast",
@@ -73,6 +76,16 @@ export default async function SingleArticlePage({ params }: ArticlePageProps) {
       "name": "Repast",
       "url": "https://repast.app",
     },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://repast.app" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://repast.app/blog" },
+      { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://repast.app/blog/${article.slug}` },
+    ],
   };
 
   return (
@@ -114,6 +127,10 @@ export default async function SingleArticlePage({ params }: ArticlePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
 
         {/* Content */}

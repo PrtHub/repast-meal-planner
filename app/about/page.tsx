@@ -29,9 +29,58 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Repast",
+    url: "https://repast.app",
+    description:
+      "Repast is an on-device meal planning engine for iPhone. It solves your entire week of meals under an unyielding carbohydrate ceiling with zero accounts, zero trackers, and zero guesswork.",
+    applicationCategory: "HealthApplication",
+    foundingDate: "2026",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "support@repast.app",
+      contactType: "customer support",
+    },
+  };
+
+  const aboutPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Repast — Etymology, Philosophy & Architecture",
+    url: "https://repast.app/about",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Repast",
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://repast.app/about" },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f4ee] text-[#221d19]">
       <Navbar />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
 
       <main className="max-w-4xl mx-auto px-6 py-16 sm:py-24">
         {/* Breadcrumb / Category */}

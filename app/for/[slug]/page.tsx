@@ -64,6 +64,7 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
     description: uc.subtitle,
     articleSection: uc.category,
     datePublished: "2026-09-04",
+    dateModified: "2026-09-25",
     author: {
       "@type": "Organization",
       name: "Repast",
@@ -88,6 +89,16 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
         text: item.answer,
       },
     })),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
+      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://repast.app/for" },
+      { "@type": "ListItem", position: 3, name: uc.title, item: `https://repast.app/for/${uc.slug}` },
+    ],
   };
 
   return (
@@ -149,6 +160,10 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
 
         {/* Pain Points vs Repast Solution Matrix */}

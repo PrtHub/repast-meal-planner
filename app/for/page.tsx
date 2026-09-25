@@ -21,11 +21,55 @@ export const metadata: Metadata = {
 };
 
 export default function ForIndexPage() {
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Who Repast Is For — Keto & Low-Carb Personas & Use Cases",
+    description:
+      "Explore how Repast's on-device constraint solver solves meal planning for busy professionals, GLP-1 patients, athletes, mixed-diet couples, and metabolic health.",
+    url: "https://repast.app/for",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: useCases.length,
+      itemListElement: useCases.map((uc, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `https://repast.app/for/${uc.slug}`,
+        name: uc.title,
+      })),
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
+      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://repast.app/for" },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f4ee] text-[#221d19]">
       <Navbar />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <main className="max-w-6xl mx-auto px-6 py-16 sm:py-20">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[12px] text-[#6e655c] mb-6">
+          <Link href="/" className="hover:text-[#221d19]">Home</Link>
+          <span>/</span>
+          <span className="text-[#221d19] font-medium">Who It&apos;s For</span>
+        </nav>
+
         {/* Header Section */}
         <div className="max-w-3xl mb-16">
           <span className="text-[11px] font-bold uppercase tracking-[1.4px] text-[#c05621] block mb-2">

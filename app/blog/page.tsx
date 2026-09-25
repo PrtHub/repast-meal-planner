@@ -21,11 +21,55 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Blog & Essays — Repast",
+    description:
+      "Essays and technical analysis on dietary constraint solvers, why food logging fails, and the mathematics of meal planning.",
+    url: "https://repast.app/blog",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: articles.length,
+      itemListElement: articles.map((article, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `https://repast.app/blog/${article.slug}`,
+        name: article.title,
+      })),
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://repast.app/blog" },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f4ee] text-[#221d19]">
       <Navbar />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <main className="max-w-5xl mx-auto px-6 py-16 sm:py-20">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[12px] text-[#6e655c] mb-6">
+          <Link href="/" className="hover:text-[#221d19]">Home</Link>
+          <span>/</span>
+          <span className="text-[#221d19] font-medium">Blog</span>
+        </nav>
+
         <div className="max-w-2xl mb-14">
           <span className="text-[11px] font-bold uppercase tracking-[1.4px] text-[#c05621] block mb-2">
             ESSAYS & INSIGHTS

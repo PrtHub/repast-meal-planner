@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   }
 
   return {
-    title: `${guide.title} — Repast Guides`,
+    title: guide.title,
     description: guide.description,
     alternates: {
       canonical: `/guides/${guide.slug}`,
@@ -63,6 +63,7 @@ export default async function SingleGuidePage({ params }: GuidePageProps) {
     "description": guide.description,
     "articleSection": guide.category,
     "datePublished": "2026-09-01",
+    "dateModified": "2026-09-25",
     "author": {
       "@type": "Organization",
       "name": "Repast",
@@ -73,6 +74,16 @@ export default async function SingleGuidePage({ params }: GuidePageProps) {
       "name": "Repast",
       "url": "https://repast.app",
     },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://repast.app" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://repast.app/guides" },
+      { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://repast.app/guides/${guide.slug}` },
+    ],
   };
 
   return (
@@ -114,6 +125,10 @@ export default async function SingleGuidePage({ params }: GuidePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
 
         {/* Content */}
