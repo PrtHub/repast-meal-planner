@@ -143,18 +143,13 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/privacy" className="hover:text-[#221d19] transition-colors">
-                  Privacy Policy (No Tracking)
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#221d19] transition-colors"
-                >
-                  Terms of Use (Standard EULA)
-                </a>
+                <Link href="/terms" className="hover:text-[#221d19] transition-colors">
+                  Terms of Use
+                </Link>
               </li>
               <li>
                 <a href="mailto:support@repast.app" className="hover:text-[#221d19] transition-colors">
