@@ -354,7 +354,7 @@ export default function NetCarbConverterPage() {
             Repast builds weekly plans using real whole foods and verified single ingredients. No deceptive maltitol bars, no hidden starches, and no fake net carb math.
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"

@@ -180,7 +180,7 @@ export default async function SingleArticlePage({ params }: ArticlePageProps) {
                 "Experience meal planning that refuses rather than fudges, holds you to a hard carb cap, and stores everything on your iPhone."}
             </p>
             <a
-              href={article.cta?.buttonLink ?? "https://apps.apple.com/app/id6470000000"}
+              href={article.cta?.buttonLink ?? "https://apps.apple.com/app/id6807802664"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"

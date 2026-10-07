@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
   },
   other: {
-    "apple-itunes-app": "app-id=YOUR_APP_ID, app-argument=repast://",
+    "apple-itunes-app": "app-id=6807802664, app-argument=repast://",
   },
 };
 

@@ -127,7 +127,7 @@ export default function GuidesIndexPage() {
             iPhone. Zero manual arithmetic, zero accounts.
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full btn-primary text-[13px]"
           >
             <AppleIcon className="w-4 h-4 fill-current shrink-0" />

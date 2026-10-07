@@ -305,7 +305,7 @@ export default function FastingWindowSolverPage() {
             Repast automatically models 16:8 or 18:6 meal compression, allocating dense protein into two verified meals on your iPhone.
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"

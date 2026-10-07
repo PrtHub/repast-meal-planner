@@ -304,7 +304,7 @@ export default function CarbBudgetCalculatorPage() {
                 building a full week and one aisle-grouped shopping list. On-device only.
               </p>
               <a
-                href="https://apps.apple.com/app/id6470000000"
+                href="https://apps.apple.com/app/id6807802664"
                 className="w-full py-3 rounded-[12px] btn-primary flex items-center justify-center gap-2 text-center text-[14px]"
               >
                 <AppleIcon className="w-4 h-4 fill-current shrink-0" />

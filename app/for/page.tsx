@@ -157,7 +157,7 @@ export default function ForIndexPage() {
             Repast models whole-week diets as a mathematical system tailored to your schedule, family dynamics, and metabolic requirements on your iPhone.
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"
           >
             <AppleIcon className="w-4 h-4 fill-current shrink-0" />

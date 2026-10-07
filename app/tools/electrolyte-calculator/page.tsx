@@ -400,7 +400,7 @@ export default function ElectrolyteCalculatorPage() {
             Repast automatically builds required sodium, potassium, and magnesium thresholds into your daily whole-food meal plans on your iPhone.
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"

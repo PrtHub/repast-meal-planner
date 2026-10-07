@@ -34,7 +34,7 @@ export default function AppStoreBadge({
     () => true
   );
 
-  const appStoreUrl = "https://apps.apple.com/app/id6470000000"; // Production App Store link
+  const appStoreUrl = "https://apps.apple.com/app/id6807802664"; // Production App Store link
 
   return (
     <div className={`flex flex-col items-start gap-2 ${className}`}>

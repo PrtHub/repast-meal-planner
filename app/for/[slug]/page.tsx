@@ -303,7 +303,7 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
             {uc.cta.description}
           </p>
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full btn-primary text-[14px] font-medium"

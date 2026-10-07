@@ -457,7 +457,7 @@ self-check screen reports the rest.
 - **Apple Smart App Banner** in `<head>` — the highest-converting element on an iOS
   marketing page, and it becomes an "Open" button once installed:
   ```html
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID" />
+  <meta name="apple-itunes-app" content="app-id=6807802664" />
   ```
 - **App Store badge** must be Apple's official artwork, unmodified, with correct clear
   space. Anything else is a guideline violation.
@@ -851,7 +851,7 @@ scaling · batch-cooking mode · reminders.
 - **Apple Smart App Banner** in `<head>` — the highest-converting element on an iOS
   marketing page, and it becomes an "Open" button once installed:
   ```html
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID" />
+  <meta name="apple-itunes-app" content="app-id=6807802664" />
   ```
 - **App Store badge** must be Apple's official artwork, unmodified, with correct clear
   space. Anything else is a guideline violation.

@@ -2,7 +2,7 @@ import Link from "next/link";
 import AppleIcon from "../AppleIcon";
 
 export default function PricingSection() {
-  const appStoreUrl = "https://apps.apple.com/app/id6470000000";
+  const appStoreUrl = "https://apps.apple.com/app/id6807802664";
 
   return (
     <section id="pricing" className="py-20 px-6 max-w-5xl mx-auto border-t border-[#e6dfd5]">

@@ -87,7 +87,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           {/* Apple App Store Button with Official Apple Logo */}
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#221d19] text-[#fff8ee] text-[12px] font-semibold tracking-wide hover:bg-black active:scale-[0.98] shadow-xs hover:shadow transition-all"
@@ -145,7 +145,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="https://apps.apple.com/app/id6470000000"
+            href="https://apps.apple.com/app/id6807802664"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
