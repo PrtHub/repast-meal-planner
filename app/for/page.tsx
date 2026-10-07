@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Who Repast Is For — Use Cases & Personas",
     description:
       "Explore how Repast solves meal planning for busy professionals, GLP-1 patients, athletes, mixed-diet couples, and metabolic health.",
-    url: "https://repast.app/for",
+    url: "https://getrepast.app/for",
   },
 };
 
@@ -27,14 +27,14 @@ export default function ForIndexPage() {
     name: "Who Repast Is For — Keto & Low-Carb Personas & Use Cases",
     description:
       "Explore how Repast's on-device constraint solver solves meal planning for busy professionals, GLP-1 patients, athletes, mixed-diet couples, and metabolic health.",
-    url: "https://repast.app/for",
+    url: "https://getrepast.app/for",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: useCases.length,
       itemListElement: useCases.map((uc, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://repast.app/for/${uc.slug}`,
+        url: `https://getrepast.app/for/${uc.slug}`,
         name: uc.title,
       })),
     },
@@ -44,8 +44,8 @@ export default function ForIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://repast.app/for" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://getrepast.app/for" },
     ],
   };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free Keto Electrolyte & Mineral Replenishment Calculator — Repast",
     description:
       "Calculate exact elemental milligrams of Sodium, Potassium, and Magnesium for your keto diet with whole-food kitchen translations.",
-    url: "https://repast.app/tools/electrolyte-calculator",
+    url: "https://getrepast.app/tools/electrolyte-calculator",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Electrolyte Calculator", item: "https://repast.app/tools/electrolyte-calculator" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Electrolyte Calculator", item: "https://getrepast.app/tools/electrolyte-calculator" },
   ],
 };
 

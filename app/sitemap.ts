@@ -4,7 +4,7 @@ import { articles } from "@/lib/articles";
 import { useCases } from "@/lib/useCases";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://repast.app";
+  const baseUrl = "https://getrepast.app";
   const now = new Date();
 
   const coreRoutes: MetadataRoute.Sitemap = [
@@ -31,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/support`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/tools`,

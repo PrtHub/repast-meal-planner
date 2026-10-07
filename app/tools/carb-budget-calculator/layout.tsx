@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free Keto Carb Ceiling & Macro Budget Calculator — Repast",
     description:
       "Calculate your BMR, protein floor, and exact net carb ceiling across 5 diet types. Free interactive planning tool.",
-    url: "https://repast.app/tools/carb-budget-calculator",
+    url: "https://getrepast.app/tools/carb-budget-calculator",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Carb Ceiling Calculator", item: "https://repast.app/tools/carb-budget-calculator" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Carb Ceiling Calculator", item: "https://getrepast.app/tools/carb-budget-calculator" },
   ],
 };
 

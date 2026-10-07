@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Keto & Low-Carb Planning Guides — Repast",
     description:
       "Definitive reference guides on macro mathematics, electrolyte targets, grocery logistics, and constraint-based planning.",
-    url: "https://repast.app/guides",
+    url: "https://getrepast.app/guides",
   },
 };
 
@@ -27,14 +27,14 @@ export default function GuidesIndexPage() {
     name: "Keto & Low-Carb Planning Guides — Repast",
     description:
       "Definitive reference guides on net carbs vs total carbs, protein floors, renal electrolyte targets, grocery logistics, allergen constraints, and culinary science.",
-    url: "https://repast.app/guides",
+    url: "https://getrepast.app/guides",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: guides.length,
       itemListElement: guides.map((guide, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://repast.app/guides/${guide.slug}`,
+        url: `https://getrepast.app/guides/${guide.slug}`,
         name: guide.title,
       })),
     },
@@ -44,8 +44,8 @@ export default function GuidesIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Guides", item: "https://repast.app/guides" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://getrepast.app/guides" },
     ],
   };
 

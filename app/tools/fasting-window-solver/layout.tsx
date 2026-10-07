@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free Intermittent Fasting & Macro Window Solver — Repast",
     description:
       "Calculate your fasting window, asymmetric 40/60 meal distribution, and circadian timeline for 16:8, 18:6, 20:4, or OMAD.",
-    url: "https://repast.app/tools/fasting-window-solver",
+    url: "https://getrepast.app/tools/fasting-window-solver",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Fasting Window Solver", item: "https://repast.app/tools/fasting-window-solver" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Fasting Window Solver", item: "https://getrepast.app/tools/fasting-window-solver" },
   ],
 };
 

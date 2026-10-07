@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Terms of Use — Repast",
     description:
       "Repast Terms of Use — subscriptions, the recipe assistant, medical disclaimers, and your rights.",
-    url: "https://repast.app/terms",
+    url: "https://getrepast.app/terms",
     siteName: "Repast",
     locale: "en_US",
     type: "website",
@@ -32,8 +32,8 @@ export default function TermsPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Terms of Use", item: "https://repast.app/terms" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Terms of Use", item: "https://getrepast.app/terms" },
     ],
   };
 

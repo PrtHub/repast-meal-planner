@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Interactive Planning Tools — Repast",
     description:
       "Calculate your net carb ceiling, test dietary feasibility, and estimate cook-session grocery savings.",
-    url: "https://repast.app/tools",
+    url: "https://getrepast.app/tools",
   },
 };
 
@@ -77,14 +77,14 @@ export default function ToolsIndexPage() {
     name: "Interactive Planning Tools — Repast",
     description:
       "Free interactive planning utilities from Repast: Calculate your net carb ceiling, test diet constraint feasibility, and estimate cook-session grocery savings.",
-    url: "https://repast.app/tools",
+    url: "https://getrepast.app/tools",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: tools.length,
       itemListElement: tools.map((tool, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://repast.app/tools/${tool.slug}`,
+        url: `https://getrepast.app/tools/${tool.slug}`,
         name: tool.title,
       })),
     },
@@ -94,8 +94,8 @@ export default function ToolsIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
     ],
   };
 

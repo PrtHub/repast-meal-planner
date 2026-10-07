@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy — Repast",
     description:
       "No account, no ads, no cross-app tracking. Your body measurements, meal plans and weight history stay on your iPhone.",
-    url: "https://repast.app/privacy",
+    url: "https://getrepast.app/privacy",
     siteName: "Repast",
     locale: "en_US",
     type: "website",
@@ -32,8 +32,8 @@ export default function PrivacyPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://repast.app/privacy" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://getrepast.app/privacy" },
     ],
   };
 

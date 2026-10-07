@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free Diet Constraint Feasibility Checker — Repast",
     description:
       "Test whether your weeknight prep time, diet type, and exclusions create an impossible clash or a fully servable 7-day plan.",
-    url: "https://repast.app/tools/feasibility-checker",
+    url: "https://getrepast.app/tools/feasibility-checker",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Feasibility Checker", item: "https://repast.app/tools/feasibility-checker" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Feasibility Checker", item: "https://getrepast.app/tools/feasibility-checker" },
   ],
 };
 

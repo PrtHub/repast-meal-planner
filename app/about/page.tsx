@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Repast — Etymology, Philosophy & Architecture",
     description:
       "What is Repast? Discover the origin of the word, why we built an on-device constraint solver, and how we replaced food logging with deterministic weekly planning.",
-    url: "https://repast.app/about",
+    url: "https://getrepast.app/about",
     siteName: "Repast",
     locale: "en_US",
     type: "website",
@@ -34,14 +34,14 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Repast",
-    url: "https://repast.app",
+    url: "https://getrepast.app",
     description:
       "Repast is an on-device meal planning engine for iPhone. It solves your entire week of meals under an unyielding carbohydrate ceiling with zero accounts, zero trackers, and zero guesswork.",
     applicationCategory: "HealthApplication",
     foundingDate: "2026",
     contactPoint: {
       "@type": "ContactPoint",
-      email: "support@repast.app",
+      email: "pritamfinds@gmail.com",
       contactType: "customer support",
     },
   };
@@ -50,7 +50,7 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Repast — Etymology, Philosophy & Architecture",
-    url: "https://repast.app/about",
+    url: "https://getrepast.app/about",
     mainEntity: {
       "@type": "Organization",
       name: "Repast",
@@ -61,8 +61,8 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "About", item: "https://repast.app/about" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://getrepast.app/about" },
     ],
   };
 

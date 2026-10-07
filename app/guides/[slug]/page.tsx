@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     openGraph: {
       title: guide.title,
       description: guide.description,
-      url: `https://repast.app/guides/${guide.slug}`,
+      url: `https://getrepast.app/guides/${guide.slug}`,
       type: "article",
     },
     twitter: {
@@ -67,12 +67,12 @@ export default async function SingleGuidePage({ params }: GuidePageProps) {
     "author": {
       "@type": "Organization",
       "name": "Repast",
-      "url": "https://repast.app",
+      "url": "https://getrepast.app",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Repast",
-      "url": "https://repast.app",
+      "url": "https://getrepast.app",
     },
   };
 
@@ -80,9 +80,9 @@ export default async function SingleGuidePage({ params }: GuidePageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://repast.app" },
-      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://repast.app/guides" },
-      { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://repast.app/guides/${guide.slug}` },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getrepast.app" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://getrepast.app/guides" },
+      { "@type": "ListItem", "position": 3, "name": guide.title, "item": `https://getrepast.app/guides/${guide.slug}` },
     ],
   };
 

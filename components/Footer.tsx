@@ -68,9 +68,9 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <a href="mailto:support@repast.app" className="hover:text-[#c05621] transition-colors">
+              <Link href="/support" className="hover:text-[#c05621] transition-colors">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

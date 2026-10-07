@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: UseCasePageProps): Promise<Me
     openGraph: {
       title: uc.title,
       description: uc.subtitle,
-      url: `https://repast.app/for/${uc.slug}`,
+      url: `https://getrepast.app/for/${uc.slug}`,
       type: "article",
     },
     twitter: {
@@ -68,12 +68,12 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
     author: {
       "@type": "Organization",
       name: "Repast",
-      url: "https://repast.app",
+      url: "https://getrepast.app",
     },
     publisher: {
       "@type": "Organization",
       name: "Repast",
-      url: "https://repast.app",
+      url: "https://getrepast.app",
     },
   };
 
@@ -95,9 +95,9 @@ export default async function SingleUseCasePage({ params }: UseCasePageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://repast.app/for" },
-      { "@type": "ListItem", position: 3, name: uc.title, item: `https://repast.app/for/${uc.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Who It's For", item: "https://getrepast.app/for" },
+      { "@type": "ListItem", position: 3, name: uc.title, item: `https://getrepast.app/for/${uc.slug}` },
     ],
   };
 

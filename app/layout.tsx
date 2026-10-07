@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const siteUrl = "https://repast.app";
+const siteUrl = "https://getrepast.app";
 const title = "Repast — a week of keto, decided";
 const description =
   "Repast builds a week of keto meals and one shopping list from your own numbers, and won't hand you a day that breaks your carb ceiling. No account, nothing leaves your phone. iPhone.";

@@ -4,7 +4,7 @@ BEFORE PUBLISHING (this comment does not render):
    date.
 2. Have a lawyer review it — especially the health disclaimer, the liability
    limits and the governing-law clause for the countries you sell in.
-3. Publish at https://repast.app/terms, then change TERMS_URL in
+3. Publish at https://getrepast.app/terms, then change TERMS_URL in
    src/constants/links.ts from Apple's standard EULA to that address. Keep
    "Apple's Standard License Agreement" selected in App Store Connect: section 1
    says these terms add to it rather than replace it.
@@ -27,7 +27,7 @@ also applies. These terms add to it. Where they conflict, Apple's agreement wins
 on the licence to use the app, and these terms govern everything specific to
 Repast.
 
-The [Privacy Policy](https://repast.app/privacy) explains what information the app
+The [Privacy Policy](https://getrepast.app/privacy) explains what information the app
 uses and shares.
 
 ## 2. Who can use Repast

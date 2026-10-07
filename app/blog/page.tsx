@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Blog & Essays — Repast",
     description:
       "Essays on dietary constraint solvers, why food logging fails, and the mathematics of meal planning.",
-    url: "https://repast.app/blog",
+    url: "https://getrepast.app/blog",
   },
 };
 
@@ -27,14 +27,14 @@ export default function BlogIndexPage() {
     name: "Blog & Essays — Repast",
     description:
       "Essays and technical analysis on dietary constraint solvers, why food logging fails, and the mathematics of meal planning.",
-    url: "https://repast.app/blog",
+    url: "https://getrepast.app/blog",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: articles.length,
       itemListElement: articles.map((article, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://repast.app/blog/${article.slug}`,
+        url: `https://getrepast.app/blog/${article.slug}`,
         name: article.title,
       })),
     },
@@ -44,8 +44,8 @@ export default function BlogIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://repast.app/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://getrepast.app/blog" },
     ],
   };
 

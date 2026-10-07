@@ -7,7 +7,7 @@ BEFORE PUBLISHING (this comment does not render):
 4. OpenRouter: in Settings → Privacy, turn OFF prompt logging and any "allow
    training" option, and limit routing to providers that do not train on API
    data. The assistant paragraph assumes that.
-5. Publish at https://repast.app/privacy — the app and App Store Connect both
+5. Publish at https://getrepast.app/privacy — the app and App Store Connect both
    link there.
 6. Re-read this page whenever a new service, SDK or analytics event is added.
 -->

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free Leftover & Cook Session Savings Calculator — Repast",
     description:
       "See how batch cooking and leftover-aware planning cuts grocery spend in half and eliminates food waste.",
-    url: "https://repast.app/tools/leftover-calculator",
+    url: "https://getrepast.app/tools/leftover-calculator",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Leftover Calculator", item: "https://repast.app/tools/leftover-calculator" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Leftover Calculator", item: "https://getrepast.app/tools/leftover-calculator" },
   ],
 };
 

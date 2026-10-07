@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Free True Net Carb & Sugar Alcohol Deception Converter — Repast",
     description:
       "Unmask deceptive keto food packaging. Compare claimed net carbs against true metabolic impact and polyol glycemic absorption.",
-    url: "https://repast.app/tools/net-carb-converter",
+    url: "https://getrepast.app/tools/net-carb-converter",
   },
   twitter: {
     card: "summary_large_image",
@@ -25,9 +25,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://repast.app" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://repast.app/tools" },
-    { "@type": "ListItem", position: 3, name: "Net Carb Converter", item: "https://repast.app/tools/net-carb-converter" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://getrepast.app" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://getrepast.app/tools" },
+    { "@type": "ListItem", position: 3, name: "Net Carb Converter", item: "https://getrepast.app/tools/net-carb-converter" },
   ],
 };
 
