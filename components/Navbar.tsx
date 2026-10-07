@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AppleIcon from "./AppleIcon";
+import AppIcon from "./AppIcon";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -45,13 +46,12 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/"
-            className="text-[26px] font-serif-display font-normal tracking-tight text-[#221d19] hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c05621] rounded-lg"
+            className="flex items-center gap-2.5 text-[26px] font-serif-display font-normal tracking-tight text-[#221d19] hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c05621] rounded-lg"
             aria-label="Repast Home"
           >
-            Repast
+            <AppIcon className="w-8 h-8 rounded-[8px] shrink-0" />
+            <span>Repast</span>
           </Link>
-
-
         </div>
 
         {/* Desktop Navigation Pill Bar */}
@@ -93,7 +93,7 @@ export default function Navbar() {
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#221d19] text-[#fff8ee] text-[12px] font-semibold tracking-wide hover:bg-black active:scale-[0.98] shadow-xs hover:shadow transition-all"
           >
             <AppleIcon className="w-3.5 h-3.5 fill-current shrink-0" />
-            <span>Get for iPhone</span>
+            <span>Get the app</span>
           </a>
 
           {/* Mobile Hamburger Button */}

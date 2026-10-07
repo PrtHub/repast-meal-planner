@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/assets/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [
+      { url: "/assets/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/assets/favicon.png",
+  },
   keywords: [
     "keto meal planner",
     "low carb meal planner",

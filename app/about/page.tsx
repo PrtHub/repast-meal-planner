@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppStoreBadge from "@/components/AppStoreBadge";
+import AppIcon from "@/components/AppIcon";
 
 export const metadata: Metadata = {
   title: "About Repast — Etymology, Philosophy & Architecture",
@@ -104,14 +105,17 @@ export default function AboutPage() {
         {/* Section 1: The Etymology of the Word */}
         <section className="mb-16">
           <div className="p-8 sm:p-10 rounded-[28px] bg-white border border-[#e6dfd5] shadow-[0_4px_20px_rgba(34,29,25,0.04)] mb-8">
-            <div className="flex flex-wrap items-baseline gap-3 mb-4">
-              <span className="text-[28px] sm:text-[34px] font-serif-display font-normal text-[#221d19]">
-                repast
-              </span>
-              <span className="text-[14px] text-[#8a7f73] font-mono">/rɪˈpɑːst/ · /rɪˈpæst/</span>
-              <span className="text-[12px] font-semibold uppercase tracking-[1px] text-[#c05621] px-2.5 py-0.5 rounded-full bg-[#fdf2ea]">
-                noun & archaic verb
-              </span>
+            <div className="flex items-center gap-4 mb-4">
+              <AppIcon className="w-12 h-12 rounded-[12px] shadow-sm shrink-0" />
+              <div className="flex flex-wrap items-baseline gap-3">
+                <span className="text-[28px] sm:text-[34px] font-serif-display font-normal text-[#221d19]">
+                  repast
+                </span>
+                <span className="text-[14px] text-[#8a7f73] font-mono">/rɪˈpɑːst/ · /rɪˈpæst/</span>
+                <span className="text-[12px] font-semibold uppercase tracking-[1px] text-[#c05621] px-2.5 py-0.5 rounded-full bg-[#fdf2ea]">
+                  noun & archaic verb
+                </span>
+              </div>
             </div>
 
             <div className="space-y-4 text-[15px] leading-[26px] text-[#554d45] border-t border-[#f0ebe2] pt-6">

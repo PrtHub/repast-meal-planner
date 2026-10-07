@@ -288,14 +288,23 @@ a { color: inherit; }
 @media (max-width: 860px) { .final-card { grid-template-columns: minmax(0, 1fr); } .final-art { min-height: 0; height: clamp(170px, 46vw, 260px); margin-bottom: calc(clamp(36px, 6vw, 84px) * -1); } .final-art img:nth-child(1) { width: 54%; right: -4%; top: 0; } .final-art img:nth-child(2) { width: 42%; left: 2%; top: 22%; bottom: auto; } }
 
 /* ---------------------------------------------------------------- footer */
-.footer { padding-block: 44px calc(44px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--hair); }
-.footer-in { display: flex; flex-wrap: wrap; gap: 20px 40px; justify-content: space-between; align-items: flex-start; }
-.footer-note { margin: 12px 0 0; max-width: 44ch; font-size: 14px; color: var(--ink-2); }
-.footer-links { display: flex; flex-wrap: wrap; gap: 10px 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
-.footer-links a { text-decoration: none; font-weight: 550; }
-.footer-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.footer-meta { width: 100%; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 14px; color: var(--ink-2); padding-top: 18px; border-top: 1px solid var(--hair); }
-.email { user-select: all; }
+.footer { padding-block: 48px calc(44px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--hair); background: var(--paper); }
+.footer-in { display: flex; flex-direction: column; gap: 32px; }
+.footer-top { display: flex; flex-wrap: wrap; gap: 24px 48px; justify-content: space-between; align-items: flex-start; }
+.footer-brand { display: flex; flex-direction: column; gap: 8px; max-width: 44ch; }
+.footer-note { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px 28px; list-style: none; margin: 0; padding: 6px 0 0; font-size: 15px; }
+.footer-links a { text-decoration: none; font-weight: 550; color: var(--ink-2); transition: color .2s; }
+.footer-links a:hover { color: var(--terra); text-decoration: underline; text-underline-offset: 4px; }
+.footer-meta { width: 100%; display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; font-size: 13px; color: var(--ink-2); padding-top: 20px; border-top: 1px solid var(--hair); }
+.footer-legal { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; list-style: none; margin: 0; padding: 0; }
+.footer-legal a { text-decoration: none; color: var(--ink-2); font-weight: 550; transition: color .2s; }
+.footer-legal a:hover { color: var(--terra); text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 760px) {
+  .footer-top { flex-direction: column; gap: 24px; }
+  .footer-links { gap: 10px 20px; }
+  .footer-meta { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -811,16 +820,30 @@ a { color: inherit; }
 
 <footer class="footer">
   <div class="wrap footer-in">
-    <div>
-      <a class="brand" href="#top"><svg class="logo " viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="var(--terra)"/><g transform="translate(15.6 13.6) scale(0.0725)"><path d="M193.94 500.00L0 500.00L0 492.42L15.91 487.12Q31.06 481.82 35.61 473.11Q40.15 464.39 40.15 448.48L40.15 52.27Q40.15 37.12 35.98 28.41Q31.82 19.70 17.42 14.39L0 7.58L0 0L216.67 0Q306.06 0 353.79 33.71Q401.52 67.42 401.52 127.27Q401.52 160.61 376.52 193.94Q351.52 227.27 297.73 245.45L403.03 454.55Q409.85 467.42 418.56 475.38Q427.27 483.33 441.67 489.39L451.52 493.18L451.52 500.00L315.91 500.00L203.79 261.36L152.27 261.36L152.27 448.48Q152.27 462.88 156.82 471.97Q161.36 481.06 175.76 485.61L193.94 492.42L193.94 500.00M152.27 15.15L152.27 246.21L188.64 246.21Q243.18 246.21 267.42 217.05Q291.67 187.88 291.67 130.30Q291.67 71.97 268.94 43.56Q246.21 15.15 192.42 15.15" fill="var(--cream)"/></g></svg><span class="brand-name">Repast</span></a>
-      <p class="footer-note">Repast is a meal planning tool, not medical advice. Talk to your doctor before starting a keto or low-carb diet.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Repast, back to top"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="var(--terra)"/><g transform="translate(15.6 13.6) scale(0.0725)"><path d="M193.94 500.00L0 500.00L0 492.42L15.91 487.12Q31.06 481.82 35.61 473.11Q40.15 464.39 40.15 448.48L40.15 52.27Q40.15 37.12 35.98 28.41Q31.82 19.70 17.42 14.39L0 7.58L0 0L216.67 0Q306.06 0 353.79 33.71Q401.52 67.42 401.52 127.27Q401.52 160.61 376.52 193.94Q351.52 227.27 297.73 245.45L403.03 454.55Q409.85 467.42 418.56 475.38Q427.27 483.33 441.67 489.39L451.52 493.18L451.52 500.00L315.91 500.00L203.79 261.36L152.27 261.36L152.27 448.48Q152.27 462.88 156.82 471.97Q161.36 481.06 175.76 485.61L193.94 492.42L193.94 500.00M152.27 15.15L152.27 246.21L188.64 246.21Q243.18 246.21 267.42 217.05Q291.67 187.88 291.67 130.30Q291.67 71.97 268.94 43.56Q246.21 15.15 192.42 15.15" fill="var(--cream)"/></g></svg><span class="brand-name">Repast</span></a>
+        <p class="footer-note">A week of keto, decided. Built on-device for iPhone with zero accounts and zero trackers.</p>
+        <p class="footer-note" style="font-size:12px;color:var(--ink-3);">Repast is a meal planning tool, not medical advice. Talk to your doctor before starting a keto or low-carb diet.</p>
+      </div>
+
+      <ul class="footer-links" aria-label="Website navigation">
+        <li><a href="/for">Who It’s For</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
     </div>
-    <ul class="footer-links">
-      <li><a href="https://repast.app/privacy" target="_blank" rel="noopener">Privacy</a></li>
-      <li><a href="https://repast.app/terms" target="_blank" rel="noopener">Terms</a></li>
-      <li><a href="mailto:repast@roboticarmsoftware.com">Contact</a></li>
-    </ul>
-    <div class="footer-meta"><span>© 2026 Repast</span><span>Support: <span class="email">repast@roboticarmsoftware.com</span></span></div>
+
+    <div class="footer-meta">
+      <span>&copy; 2026 Repast. All rights reserved. iPhone is a trademark of Apple Inc.</span>
+      <ul class="footer-legal">
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+        <li><a href="mailto:support@repast.app">Support</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppIcon from "@/components/AppIcon";
 
 export const metadata = {
   title: "Page Not Found",
@@ -39,6 +40,7 @@ export default function NotFoundPage() {
       <main className="max-w-3xl mx-auto px-6 py-20 sm:py-28">
         {/* Header */}
         <div className="text-center mb-14">
+          <AppIcon className="w-14 h-14 rounded-[14px] shadow-sm mx-auto mb-5" />
           <span className="text-[11px] font-bold uppercase tracking-[1.4px] text-[#c05621] block mb-3">
             PAGE NOT FOUND
           </span>
