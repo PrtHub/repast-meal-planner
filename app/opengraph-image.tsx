@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export const alt = "Repast — A week of keto, decided";
 export const size = {
@@ -155,7 +155,7 @@ export default async function Image() {
                 marginBottom: "16px",
               }}
             >
-              <div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
                 <div style={{ fontSize: "10px", fontWeight: 700, color: "#6e655c" }}>
                   WEEK 1 · DAY 1
                 </div>
