@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 
+export const dynamic = "force-static";
 export const runtime = "nodejs";
 
 export const alt = "Repast — A week of keto, decided";

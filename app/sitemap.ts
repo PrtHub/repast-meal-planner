@@ -3,6 +3,8 @@ import { guides } from "@/lib/guides";
 import { articles } from "@/lib/articles";
 import { useCases } from "@/lib/useCases";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://getrepast.app";
   const now = new Date();
